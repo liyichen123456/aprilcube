@@ -56,12 +56,12 @@ CAMERA_TO_PORT: dict[str, str] = {
     # "cam0": "4-9:1.0",
     # "cam1": "3-5.4.3.4.4:1.0",
     # "cam1": "3-5.4.3.4.2:1.0",  # pinehole middle finger yaml 0707 0145 update
-    "cam1": "3-10:1.0",  # IR 3MP f3.6mm
+    "cam1": "5-4:1.0",  # IR 3MP f3.6mm
 }
 
 CAMERA_TO_INTRINSICS_YAML: dict[str, str] = {
-    "cam1": "/home/ps/RobotCamCalib1/outputs/intrinsics_cam0_fisheye_2592x1944_0703_230535.yaml",  # 180 degree
-
+    # "cam1": "/home/ps/RobotCamCalib1/outputs/intrinsics_cam0_fisheye_2592x1944_0703_230535.yaml",  # 180 degree
+    "cam1": "/home/ps/RobotCamCalib1/outputs/intrinsics_charuco_offline_eval_0730_162254_0730_162618/intr_calib_charuco_integrated_with_diagnostics_test.yaml",
     # fisheye middle finger yaml
     # "cam1": "/home/ps/RobotCamCalib1/outputs/intrinsics_middle_finger_charuco_2592x1944_0705_180038.yaml",
 
@@ -94,8 +94,8 @@ ADAPTIVE_CLAHE_DETECTION = True
 
 CUBE_CFG_DIRS: list[Path] = [
     # THIRDPARTY_DIR / "aprilcube" / "cubes" / "cube_april_36h11_0_5_1x1x1_15mm",
-    THIRDPARTY_DIR / "aprilcube" / "cubes" / "cube_april_36h11_6_11_1x1x1_15mm",
-    # THIRDPARTY_DIR / "aprilcube" / "cubes" / "cube_april_36h11_12_17_1x1x1_15mm",
+    # THIRDPARTY_DIR / "aprilcube" / "cubes" / "cube_april_36h11_6_11_1x1x1_15mm",
+    THIRDPARTY_DIR / "aprilcube" / "cubes" / "cube_april_36h11_12_17_1x1x1_15mm",
 ]
 
 ENABLE_FILTER = True
